@@ -94,19 +94,62 @@
     </div>
 
     <!-- Hero -->
-    <section class="hero" aria-labelledby="heroTitle">
-      <div class="hero-top">
-        <div class="hero-img" aria-hidden="true">
-          <!-- Replace with real emotional photo before deploy -->
-          <img id="heroPhoto" src="https://i.postimg.cc/qvy6jDS5/Design-sem-nome-20251211-173552-0000.png" alt="children receiving food"/>
-        </div>
-        <div class="hero-copy">
-          <div class="kicker">EMERGENCY • FOOD & MEDICINE</div>
-          <h1 id="heroTitle" class="title">Feed a child in Gaza — urgent distribution this week</h1>
-          <p class="subtitle">Shelves are empty. Clinics are short of supplies. Your donation buys food packs and emergency medicine delivered within 24–48 hours to families on the ground.</p>
-        </div>
-      </div>
-    </section>
+<section class="hero" aria-labelledby="heroTitle">
+  <style>
+    /* Override ONLY for this hero image */
+    .hero-top {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .hero-img {
+      width: 620px;
+      height: 1019px;
+      max-width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media(max-width: 900px){
+      .hero-top {
+        flex-direction: column;
+      }
+      .hero-img {
+        width: 100%;
+        height: auto;
+        max-height: 80vh;
+      }
+      .hero-img img {
+        height: 100%;
+      }
+    }
+  </style>
+
+  <div class="hero-top">
+    <div class="hero-img" aria-hidden="true">
+      <img id="heroPhoto"
+        src="YOUR-NEW-IMAGE.jpg"
+        alt="children receiving food"/>
+    </div>
+
+    <div class="hero-copy">
+      <div class="kicker">EMERGENCY • FOOD & MEDICINE</div>
+      <h1 id="heroTitle" class="title">Feed a child in Gaza — urgent distribution this week</h1>
+      <p class="subtitle">
+        Shelves are empty. Clinics are short of supplies.
+        Your donation buys food packs and emergency medicine delivered
+        within 24–48 hours to families on the ground.
+      </p>
+    </div>
+  </div>
+</section>
 
     <!-- Progress -->
     <section class="progress-card" aria-labelledby="progressLabel">
