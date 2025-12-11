@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You — Donation Received</title>
+
+<!-- Facebook Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '961141072401536');
+  fbq('track', 'Purchase', {value: 1.00, currency: 'USD'});
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=961141072401536&ev=Purchase&noscript=1"/>
+</noscript>
+
+<style>
+  body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: #f7f9fb;
+    color: #0b1a17;
+    text-align: center;
+  }
+  .box {
+    max-width: 460px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+  }
+  h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #2ea86b;
+  }
+  p {
+    font-size: 15px;
+    color: #53605c;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #2ea86b;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 8px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Thank You!</h1>
+    <p>Your donation has been received successfully.</p>
+    <p>You’ll get an email confirmation with the receipt.</p>
+    <a class="btn" href="/">Return to Homepage</a>
+  </div>
+</body>
+</html>
